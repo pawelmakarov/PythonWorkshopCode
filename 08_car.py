@@ -1,3 +1,9 @@
+class MyError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return (self.value)
+
 class Point:
     def __init__(self, x=5, y=4):
         self.x = x
@@ -7,12 +13,6 @@ class Point:
     def distance(self, other):
         from math import hypot
         return hypot(self.x - other.x, self.y - other.y)
-
-class MyError(Exception):
-    def __init__(self, value):
-        self.value = value
-    def __str__(self):
-        return (self.value)
 
 class Car(object):
     def __init__(self, location, name):

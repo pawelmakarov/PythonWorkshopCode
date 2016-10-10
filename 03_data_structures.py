@@ -6,14 +6,15 @@ class MyClass(object):
         self.my_set = {'foo', 'bar', 'baz'}
         self.my_string = 'Hello World!'
 
-ob = MyClass()
+if __name__ == "__main__":
+    ob = MyClass()
 
-print(type(ob.my_dict))
-print(type(ob.my_tupel))
-print(type(ob.my_list))
-print(type(ob.my_set))
-print(type(ob.my_string))
+    print(type(ob.my_dict))
+    print(type(ob.my_tupel))
+    print(type(ob.my_list))
+    print(type(ob.my_set))
+    print(type(ob.my_string))
 
-print(ob.my_string[:4])
-print(ob.my_string[4])
-print(ob.my_string[4:])
+    print(ob.my_string[:4])
+    print(ob.my_string[4])
+    print(ob.my_string[4:])

@@ -3,6 +3,7 @@ class Point(object):
 		self.__dict__['x'] = x
 		self.__dict__['y'] = y
 		self.__class__.last = id(object)
+	# __dict__ contains the attributes in a class instance
 	# A class has a namespace implemented by a dictionary object. 
 	# Class attribute references are translated to lookups in this dictionary
 
@@ -35,7 +36,7 @@ class Point(object):
 	def x(self):
 		print 'invoke @property'
 		return self.__dict__['x']
-	@x.setter
+	# @x.setter
 	def x(self, value):
 		print 'invoke @x.setter'
 		self.__dict__['x'] = float(value)

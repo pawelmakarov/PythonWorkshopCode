@@ -17,17 +17,16 @@ class CatDog(Cat, Dog):
 		pass
 
 
-cat = Cat()
-dog = Dog()
-cd = CatDog()
+if __name__ == "__main__":
+	cat = Cat()
+	dog = Dog()
+	cd = CatDog()
 
-# cat.bark()
-# cat.walk()
+	# cat.bark()
+	# cat.walk()
 
-# dog.bark()
-# dog.walk()
+	# dog.bark()
+	# dog.walk()
 
-cd.bark()
-cd.walk()
-
-
+	cd.bark()
+	cd.walk()

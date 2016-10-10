@@ -21,6 +21,8 @@ class Mohican(object):
             self.seldID, self.__class__.static, self.__class__.last)
 
 if __name__ == "__main__":
+    print(Mohican.static_method())
+
     n0 = Mohican()
     n1 = Mohican()
     n2 = Mohican()
