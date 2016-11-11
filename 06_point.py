@@ -1,4 +1,6 @@
 class Point(object):
+    last = None
+
 	def __init__(self, x=0, y=0):
 		self.__dict__['x'] = x
 		self.__dict__['y'] = y
@@ -6,8 +8,6 @@ class Point(object):
 	# __dict__ contains the attributes in a class instance
 	# A class has a namespace implemented by a dictionary object. 
 	# Class attribute references are translated to lookups in this dictionary
-
-	last = None
 
 	# built-in function to compute the "informal" 
 		# string representation of an object.
