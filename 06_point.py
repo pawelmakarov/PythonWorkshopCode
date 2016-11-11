@@ -23,15 +23,6 @@ class Point(object):
 		print 'invoke __ne__'
 		return not self == other
 	
-	# def __setattr__(self, name, value):
-	# 	print 'invoke __setattr__'
-	# 	if name in self.__dict__:
-	# 		self.__dict__[name] = float(value)
-
-	# def __getattr__(self, name):
-	# 	print 'invoke __getattr__'
-	# 	return self.__dict__[name]
-
 	@property
 	def x(self):
 		print 'invoke @property'
